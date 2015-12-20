@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
-  resources :articles do
-    resources :comments
-end
-  
+  resources :articles
   get 'blog'   =>  'static_pages#blog'
 
   root          'static_pages#home'
 
-
+# create an individual article without comments
 end
